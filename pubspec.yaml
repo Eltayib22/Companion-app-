@@ -1,0 +1,29 @@
+name: salah_companion
+description: Prayer times with alerts that repeat until each prayer is checked off, dhikr and adhkar, tajweed lessons and a tajweed-coloured transliterated Qur'an reader.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+  flutter: ">=3.38.1"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Verified against 22.3.1 (named-parameter API introduced in v20).
+  flutter_local_notifications: ^22.3.1
+  timezone: ^0.11.0
+  # These use long-stable APIs, so the newest compatible version is fine.
+  shared_preferences: any
+  geolocator: any
+  google_fonts: any
+  sensors_plus: any
+  url_launcher: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: any
+
+flutter:
+  uses-material-design: true
